@@ -1,4 +1,33 @@
 en:
   layouts:
     application:
-      title: "BDS Project"
+      title_global: "In BDS we trust"
+      title: "HailBDS"
+    nav:
+      header:
+        lastest: "Lastest"
+        blog: "Blog"
+        advertising: "Advertising"
+        logout: "Log Out"
+        signin: "Sign In"
+        signup: "Sign Up"
+
+  static_pages:
+    home:
+      home: "Home"
+      title: "Album example"
+      description: "Something short and leading about the collection below—its contents, "
+      btnone: "Learn more"
+      btntwo: "Learn more"
+      row_title: "Heading"
+      row_description: "And lastly this, the third column of representative placeholder content."
+      btn_detail: "View details »"
+    advertising:
+      title: "Advertising Page"
+      advertising: "Advertising"
+    blog:
+      title: "Blog Page"
+      blog: "Blog"
+    lastest:
+      title: "Lastest Page"
+      lastest: " Lastest"

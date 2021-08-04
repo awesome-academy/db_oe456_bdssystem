@@ -1,4 +1,33 @@
 vi:
   layouts:
     application:
-      title: "Dự án BDS"
+      title_global: "Dự án BDS"
+      title: "BDS"
+    nav:
+      header:
+        lastest: "Mới nhất"
+        blog: "Bài viết"
+        advertising: "Quảng Cáo"
+        logout: "Đăng xuất"
+        signin: "Đăng nhập"
+        signup: "Tạo tài khoản"
+
+  static_pages:
+    home:
+      home: "Trang chủ"
+      title: "Ảnh quảng cáo"
+      description: "Vài điều ngắn gọn và dẫn đầu về bộ sưu tập bên dưới — nội dung của bộ sưu tập, "
+      btnone: "Xem thêm"
+      btntwo: "Xem thêm"
+      row_title: "Tiêu đề "
+      row_description: "Vài điều ngắn gọn và dẫn đầu về bộ sưu tập bên dưới — nội dung của bộ sưu tập."
+      btn_detail: "Xem chi tiết »"
+    advertising:
+      title: "Quảng Cáo"
+      advertising: "Quảng Cáo"
+    blog:
+      title: "Bài viết"
+      blog: "Bài viết"
+    lastest:
+      title: "Mới nhất"
+      lastest: " Mới nhất"
