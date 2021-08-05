@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <%= link_to "BDS", root_path, class: "nav-link"%>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <%= link_to t(".lastest"), lastest_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".blog"), blog_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".advertising"), advertising_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".logout"), "#", method: :delete ,class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".signin"), "#" , class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to t(".signup"), "#", class: "nav-link"%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
