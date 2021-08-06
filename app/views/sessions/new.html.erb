@@ -1,0 +1,29 @@
+<main class="form-signin">
+
+  <%= form_for :session,url: login_path do |f| %>
+    <section class="text-center">
+        <img class="mb-4"
+          src="https://img.icons8.com/clouds/2x/fa314a/apple-camera.png"
+          alt="" width="102" height="87">
+        <h1 class="h3 mb-3 fw-normal"><%= t(".title") %></h1>
+    </section>
+
+    <%= f.label :email, t(".email") %>
+    <%= f.email_field :email, class: "form-control" %>
+    <%= f.label :password, t(".password") %>
+    <%= f.password_field :password, class: "form-control" %>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"><%= t(".remember_me") %>
+      </label>
+    </div>
+
+    <%= f.submit t(".btn_sign_in"), class: "w-100 btn btn-lg btn-primary" %>
+
+    <section class="text-center">
+      <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+    </section>
+  <% end %>
+
+</main>

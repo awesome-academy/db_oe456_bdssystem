@@ -1,0 +1,20 @@
+<div class="container_show">
+  <div class="section-header">
+    <h3 class="title" data-title="Who Am I"><%= t(".title") %></h3>
+  </div>
+
+  <div class="column-2 image">
+    <%= gravatar_for @account %>
+  </div>
+
+  <div class="section-body grid-2">
+    <div class="column-1">
+      <h3 class="title-sm"><%= @account.last_name %> <%= @account.fitst_name %></h3>
+      <p class="text"><%= @account.email %></p>
+      <p class="text"> <%= @account.url %></p>
+      <p class="text"><%= l(@account.created_at, format: :long) %></p>
+      <p class="text"><%= l(@account.updated_at, format: :long) %></p>
+      <a href="#" class="btn"><%= t(".btn_edit_account") %></a>
+    </div>
+  </div>
+</div>
