@@ -1,4 +1,10 @@
 en:
+  time:
+    formats:
+      own: "%H:%M:%S, %d %B"
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
   layouts:
     application:
       title_global: "In BDS we trust"
@@ -11,6 +17,40 @@ en:
         logout: "Log Out"
         signin: "Sign In"
         signup: "Sign Up"
+      footer:
+        back_to_top: "Back to Top"
+        footer_desc: "© 2021 Company, Inc. · "
+        privacy: "Privacy"
+        terms: "Terms"
+
+  sessions:
+    new:
+      title: "Please Sign In"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember Me"
+      btn_sign_in: "Log In"
+    create:
+      invalid_email_password_combination: "Invalid email/password combination"
+
+  accounts:
+    new:
+      title: "Please Sign Up"
+      last_name: "Last Name"
+      first_name: "First Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Password Confirm"
+      btn_create_account: "Create my Account"
+    show:
+      account_not_found: "Account not Found !"
+      title: "About me"
+      btn_edit_account: "Edit Account"
+    create:
+      create_account_success: "Create account success !"
+  shared:
+    errors_messages:
+      information_error: "The form containers %{count_error} error."
 
   static_pages:
     home:

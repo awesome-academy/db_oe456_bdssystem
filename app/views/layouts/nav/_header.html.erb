@@ -18,15 +18,19 @@
         <li class="nav-item">
           <%= link_to t(".advertising"), advertising_path, class: "nav-link"%>
         </li>
-        <li class="nav-item">
-          <%= link_to t(".logout"), "#", method: :delete ,class: "nav-link"%>
-        </li>
-        <li class="nav-item">
-          <%= link_to t(".signin"), "#" , class: "nav-link"%>
-        </li>
-        <li class="nav-item">
-          <%= link_to t(".signup"), "#", class: "nav-link"%>
-        </li>
+
+        <% if logged_in? %>
+          <li class="nav-item">
+            <%= button_to t(".logout"), logout_path, method: :delete, class: "nav-link-btn" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to t(".signin"), login_path , class: "nav-link"%>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".signup"), signup_path, class: "nav-link"%>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

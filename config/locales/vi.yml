@@ -1,4 +1,10 @@
 vi:
+  time:
+    formats:
+      own: "%H:%M:%S, %d %B"
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
   layouts:
     application:
       title_global: "Dự án BDS"
@@ -11,6 +17,39 @@ vi:
         logout: "Đăng xuất"
         signin: "Đăng nhập"
         signup: "Tạo tài khoản"
+      footer:
+        back_to_top: "Trở về trang đầu"
+        footer_desc: "© 2021 Company, Inc. · "
+        privacy: "Chính sách"
+        terms: "Điều khoản"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      remember_me: "Nhớ tôi ?"
+      btn_sign_in: "Đăng nhập"
+
+  accounts:
+    new:
+      title: "Đăng kí tài khoản"
+      last_name: "Tên cuối"
+      first_name: "Tên đầu"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+      btn_create_account: "Tạo tài khoản"
+    show:
+      account_not_found: "Tài khoản không tìm thấy !"
+      title: "Về tôi"
+      btn_edit_account: "Chỉnh sửa tài khoản"
+    create:
+      create_account_success: "Tạo tài khoản thành công !"
+
+  shared:
+    errors_messages:
+      information_error: "Form đăng kí tài khoản có %{count_error} lỗi."
 
   static_pages:
     home:
