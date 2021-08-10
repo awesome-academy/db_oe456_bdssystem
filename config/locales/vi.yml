@@ -11,6 +11,9 @@ vi:
       title: "BDS"
     nav:
       header:
+        bds: "BDS"
+        dashboard: "Trang quảng trị"
+        home: "Trang chủ"
         lastest: "Mới nhất"
         blog: "Bài viết"
         advertising: "Quảng Cáo"
@@ -22,6 +25,13 @@ vi:
         footer_desc: "© 2021 Company, Inc. · "
         privacy: "Chính sách"
         terms: "Điều khoản"
+      dashboard:
+        title: "BDS System"
+        logout_btn: "Đăng xuất"
+      sidebar:
+        dashboard: "Quản trị"
+        property: "Nhà đất"
+
 
   sessions:
     new:
@@ -30,6 +40,18 @@ vi:
       password: "Mật khẩu"
       remember_me: "Nhớ tôi ?"
       btn_sign_in: "Đăng nhập"
+
+  dashboard:
+    index:
+      title: "Trang quảng trị"
+      btn_share: "Chia sẻ"
+      btn_export: "Export"
+      time_week: "Tuần này"
+      section_title: "Tieu đề"
+    properties:
+      title: "Trang nhà đất"
+    reports:
+      title: "Trang báo cáo"
 
   accounts:
     new:
