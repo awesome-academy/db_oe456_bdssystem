@@ -11,6 +11,9 @@ en:
       title: "HailBDS"
     nav:
       header:
+        bds: "BDS"
+        dashboard: "Dashboard"
+        home: "Home"
         lastest: "Lastest"
         blog: "Blog"
         advertising: "Advertising"
@@ -22,6 +25,12 @@ en:
         footer_desc: "© 2021 Company, Inc. · "
         privacy: "Privacy"
         terms: "Terms"
+      dashboard:
+        title: "BDS System"
+        logout_btn: "Log Out"
+      sidebar:
+        dashboard: "Dashboard"
+        property: "Property"
 
   sessions:
     new:
@@ -32,6 +41,18 @@ en:
       btn_sign_in: "Log In"
     create:
       invalid_email_password_combination: "Invalid email/password combination"
+
+  dashboard:
+    index:
+      title: "Dashboard"
+      btn_share: "Share"
+      btn_export: "Export"
+      time_week: "This week"
+      section_title: "Section Title"
+    properties:
+      title: "Property Page"
+    reports:
+      title: "Report Page"
 
   accounts:
     new:
