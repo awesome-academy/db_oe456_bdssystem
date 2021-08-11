@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(".name") %></strong>
+  <%= @property.name %>
+</p>
+
+<p>
+  <strong><%= t(".address") %></strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong><%= t(".price") %></strong>
+  <%= @property.price %>
+</p>
+
+<p>
+  <strong><%= t(".rooms") %></strong>
+  <%= @property.rooms %>
+</p>
+
+<p>
+  <strong><%= t(".bathrooms") %></strong>
+  <%= @property.bathrooms %>
+</p>
+
+<%= link_to t(".edit"), edit_property_path(@property), class: "btn btn-success" %> |
+<%= link_to t(".back"), properties_path, class: "btn btn-secondary"  %>

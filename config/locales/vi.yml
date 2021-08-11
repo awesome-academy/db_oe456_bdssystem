@@ -9,6 +9,8 @@ vi:
     application:
       title_global: "Dự án BDS"
       title: "BDS"
+    validation:
+      error_warning: "cấm tài sản này được lưu : "
     nav:
       header:
         bds: "BDS"
@@ -32,6 +34,48 @@ vi:
         dashboard: "Quản trị"
         property: "Nhà đất"
 
+  properties:
+    create:
+      property_create_success: "Tạo nhà đất thành công !"
+      create_property_failed: "Tạo nhà đất thất bại !"
+    update:
+      property_update_success: "Cập nhật nhà đất thành công !"
+      update_property_failed: "Cập nhật nhà đất thất bại !"
+    destroy:
+      property_destroy_success: "Xóa nhà đất thất bại !"
+    form:
+      name: "Tên"
+      address: "Địa chỉ"
+      price: "Giá"
+      rooms : "Phòng"
+      bathrooms: "Phòng tắm"
+      save: "Lưu BDS"
+    edit:
+      title: "Chỉnh sửa Bất Động Sản"
+      show: " Xem "
+      back: " Trở về "
+    index:
+      title: "Bất Động Sản"
+      name: "Tên"
+      address: "Địa chỉ"
+      price: "Giá"
+      rooms : "Phòng"
+      bathrooms: "Phòng tắm"
+      show: " Xem "
+      edit: " Chỉnh sửa "
+      destroy: " Xóa "
+      sure_sure: "Bạn có chắn chắn muốn xóa không ?"
+      new_property: "Bất Động Sản mới"
+    new:
+      back: " Trở về "
+    show:
+      name: "Tên : "
+      address: "Địa chỉ : "
+      price: "Địa chỉ : "
+      rooms : "Phòng : "
+      bathrooms: "Phòng tắm : "
+      back: " Trở về "
+      edit: " Chỉnh sửa "
 
   sessions:
     new:

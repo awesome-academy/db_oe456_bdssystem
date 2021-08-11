@@ -1,0 +1,33 @@
+<%= form_with(model: property) do |form| %>
+
+  <%= render "layouts/validation", item: @property%>
+
+  <div class="field">
+    <%= form.label t(".name") , class: "h5"%>
+    <%= form.text_field :name , class: "form-control"%>
+  </div>
+
+  <div class="field">
+    <%= form.label t(".address") , class: "h5"%>
+    <%= form.text_field :address , class: "form-control"%>
+  </div>
+
+  <div class="field">
+    <%= form.label t(".price") , class: "h5"%>
+    <%= form.number_field :price , class: "form-control"%>
+  </div>
+
+  <div class="field">
+    <%= form.label t(".rooms") , class: "h5"%>
+    <%= form.number_field :rooms , class: "form-control"%>
+  </div>
+
+  <div class="field">
+    <%= form.label t(".bathrooms") , class: "h5"%>
+    <%= form.number_field :bathrooms , class: "form-control"%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit t(".save"), class: "btn btn-success"%>
+  </div>
+<% end %>

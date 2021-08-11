@@ -1,4 +1,6 @@
 class Account < ApplicationRecord
+  has_many :properties, dependent: :destroy
+
   before_save :downcase_email
 
   scope :newset, ->{order(created_at: :desc)}

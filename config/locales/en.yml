@@ -9,6 +9,8 @@ en:
     application:
       title_global: "In BDS we trust"
       title: "HailBDS"
+    validation:
+      error_warning: "prohibited this property from being saved : "
     nav:
       header:
         bds: "BDS"
@@ -31,6 +33,49 @@ en:
       sidebar:
         dashboard: "Dashboard"
         property: "Property"
+
+  properties:
+    create:
+      property_create_success: "Create property success !"
+      create_property_failed: "Create property fail !"
+    update:
+      property_update_success: "Update property success !"
+      update_property_failed: "Update property success !"
+    destroy:
+      property_destroy_success: "Destroy property success !"
+    form:
+      name: "Name"
+      address: "Address"
+      price: "Price"
+      rooms : "Rooms"
+      bathrooms: "Bathrooms"
+      save: "Save Property"
+    edit:
+      title: "Editing Property"
+      show: " Show "
+      back: " Back "
+    index:
+      title: "Properties"
+      name: "Name"
+      address: "Address"
+      price: "Price"
+      rooms : "Rooms"
+      bathrooms: "Bathrooms"
+      show: " Show "
+      edit: " Edit "
+      destroy: " Destroy "
+      sure_sure: "Are you sure ?"
+      new_property: "New Property"
+    new:
+      back: " Back "
+    show:
+      name: "Name : "
+      address: "Address : "
+      price: "Price : "
+      rooms : "Rooms : "
+      bathrooms: "Bathrooms : "
+      back: " Back "
+      edit: " Edit "
 
   sessions:
     new:
