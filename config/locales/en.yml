@@ -5,10 +5,14 @@ en:
       default: "%d-%m-%Y"
       long: "%d %B, %Y"
       short: "%d %b"
+
   layouts:
     application:
       title_global: "In BDS we trust"
       title: "HailBDS"
+    validation:
+      error: "error ."
+      error_warning: "prohibited this property from being saved : "
     nav:
       header:
         bds: "BDS"
@@ -31,6 +35,52 @@ en:
       sidebar:
         dashboard: "Dashboard"
         property: "Property"
+
+  properties:
+    create:
+      property_create_success: "Create property success !"
+      create_property_failed: "Create property fail !"
+    update:
+      property_update_success: "Update property success !"
+      update_property_failed: "Update property success !"
+    destroy:
+      property_destroy_success: "Destroy property success !"
+      property_destroy_fail: "Destroy property fail !"
+    form:
+      name: "Name"
+      address: "Address"
+      price: "Price"
+      rooms : "Rooms"
+      bathrooms: "Bathrooms"
+      save: "Save Property"
+    property:
+      show: " Show "
+      edit: " Edit "
+      destroy: " Destroy "
+      sure_sure: "Are you sure ?"
+    edit:
+      title: "Editing Property"
+      show: " Show "
+      back: " Back "
+    index:
+      title: "Properties"
+      name: "Name"
+      address: "Address"
+      price: "Price"
+      rooms : "Rooms"
+      bathrooms: "Bathrooms"
+      new_property: "New Property"
+    new:
+      title: "New Property"
+      back: " Back "
+    show:
+      name: "Name : "
+      address: "Address : "
+      price: "Price : "
+      rooms : "Rooms : "
+      bathrooms: "Bathrooms : "
+      back: " Back "
+      edit: " Edit "
 
   sessions:
     new:
@@ -69,6 +119,7 @@ en:
       btn_edit_account: "Edit Account"
     create:
       create_account_success: "Create account success !"
+
   shared:
     errors_messages:
       information_error: "The form containers %{count_error} error."
