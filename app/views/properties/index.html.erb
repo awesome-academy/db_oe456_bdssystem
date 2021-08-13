@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(".title") %></h1>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th><%= t(".name") %></th>
+      <th><%= t(".address") %></th>
+      <th><%= t(".price") %></th>
+      <th><%= t(".rooms") %></th>
+      <th><%= t(".bathrooms") %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+      <%= render @properties %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t(".new_property"), new_property_path, class: "btn btn-success" %>
+<br>
+<%= paginate @properties%>

@@ -5,10 +5,14 @@ vi:
       default: "%d-%m-%Y"
       long: "%d %B, %Y"
       short: "%d %b"
+
   layouts:
     application:
       title_global: "Dự án BDS"
       title: "BDS"
+    validation:
+      error: "lỗi."
+      error_warning: "cấm tài sản này được lưu : "
     nav:
       header:
         bds: "BDS"
@@ -32,6 +36,54 @@ vi:
         dashboard: "Quản trị"
         property: "Nhà đất"
 
+  properties:
+    create:
+      property_create_success: "Tạo nhà đất thành công !"
+      create_property_failed: "Tạo nhà đất thất bại !"
+    update:
+      property_update_success: "Cập nhật nhà đất thành công !"
+      update_property_failed: "Cập nhật nhà đất thất bại !"
+    destroy:
+      property_destroy_success: "Xóa nhà đất thành công !"
+      property_destroy_fail: "Xóa nhà đất thất bại !"
+    form:
+      name: "Tên"
+      address: "Địa chỉ"
+      price: "Giá"
+      rooms : "Phòng"
+      bathrooms: "Phòng tắm"
+      save: "Lưu BDS"
+    property:
+      show: " Xem "
+      edit: " Chỉnh sửa "
+      destroy: " Xóa "
+      sure_sure: "Bạn có chắc chắn muốn xóa không ?"
+    edit:
+      title: "Chỉnh sửa Bất Động Sản"
+      show: " Xem "
+      back: " Trở về "
+    index:
+      title: "Bất Động Sản"
+      name: "Tên"
+      address: "Địa chỉ"
+      price: "Giá"
+      rooms : "Phòng"
+      bathrooms: "Phòng tắm"
+      show: " Xem "
+      edit: " Chỉnh sửa "
+      destroy: " Xóa "
+      new_property: "Bất Động Sản mới"
+    new:
+      title: "Bất động sản mới"
+      back: "Trở về "
+    show:
+      name: "Tên : "
+      address: "Địa chỉ : "
+      price: "Địa chỉ : "
+      rooms : "Phòng : "
+      bathrooms: "Phòng tắm : "
+      back: " Trở về "
+      edit: " Chỉnh sửa "
 
   sessions:
     new:
@@ -40,12 +92,14 @@ vi:
       password: "Mật khẩu"
       remember_me: "Nhớ tôi ?"
       btn_sign_in: "Đăng nhập"
+    create:
+      invalid_email_password_combination: "Invalid email/password combination"
 
   dashboard:
     index:
       title: "Trang quảng trị"
       btn_share: "Chia sẻ"
-      btn_export: "Export"
+      btn_export: "Xuất"
       time_week: "Tuần này"
       section_title: "Tieu đề"
     properties:
