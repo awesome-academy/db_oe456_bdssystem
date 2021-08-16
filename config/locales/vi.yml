@@ -6,6 +6,14 @@ vi:
       long: "%d %B, %Y"
       short: "%d %b"
 
+  image_validates:
+    must_valid_image_format: "phải là một định dạng hình ảnh hợp lệ"
+    image_size_less_than: "phải nhỏ hơn 5MB"
+
+  javascript:
+    property_handle_size_image:
+      property_handle_size_image: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
+
   layouts:
     application:
       title_global: "Dự án BDS"
@@ -43,9 +51,11 @@ vi:
     update:
       property_update_success: "Cập nhật nhà đất thành công !"
       update_property_failed: "Cập nhật nhà đất thất bại !"
+      invalid_account: "Tài khoản không hợp lệ !"
     destroy:
       property_destroy_success: "Xóa nhà đất thành công !"
       property_destroy_fail: "Xóa nhà đất thất bại !"
+      invalid_account: "Tài khoản không hợp lệ !"
     form:
       name: "Tên"
       address: "Địa chỉ"

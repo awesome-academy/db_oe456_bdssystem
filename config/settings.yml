@@ -7,6 +7,9 @@ account:
     valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   password:
     min_length: 6
+  image_max_size: 5
 
 property:
-    max_length: 140
+  max_length: 140
+  image_format: photo/jpeg,photo/gif,photo/png
+  image_format_validation: ["image/jpeg image/gif image/png"]

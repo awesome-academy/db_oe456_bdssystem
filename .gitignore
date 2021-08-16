@@ -23,6 +23,9 @@
 /public/assets
 .byebug_history
 
+# upload image fie
+/storage
+
 # config
 /config/master.key
 config/database.yml

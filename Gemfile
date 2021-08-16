@@ -5,11 +5,14 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
 
+gem "active_storage_validations", "~> 0.9.5"
 gem "bcrypt", "~> 3.1", ">= 3.1.16"
 gem "bootstrap-sass", "3.4.1"
 gem "config", "~> 3.1"
+gem "image_processing", "~> 1.12", ">= 1.12.1"
 gem "jbuilder", "~> 2.7"
 gem "kaminari"
+gem "mini_magick", "~> 4.11"
 gem "mysql2", "~> 0.5.3"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.4"

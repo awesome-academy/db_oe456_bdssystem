@@ -6,6 +6,14 @@ en:
       long: "%d %B, %Y"
       short: "%d %b"
 
+  image_validates:
+    must_valid_image_format: "must be a valid image format"
+    image_size_less_than: "should be less than 5MB"
+
+  javascript:
+    property_handle_size_image:
+      property_handle_size_image: "Maximum file size is 5MB. Please choose a smaller file."
+
   layouts:
     application:
       title_global: "In BDS we trust"
@@ -43,9 +51,11 @@ en:
     update:
       property_update_success: "Update property success !"
       update_property_failed: "Update property success !"
+      invalid_account: "Invalid Account !"
     destroy:
       property_destroy_success: "Destroy property success !"
       property_destroy_fail: "Destroy property fail !"
+      invalid_account: "Invalid Account !"
     form:
       name: "Name"
       address: "Address"

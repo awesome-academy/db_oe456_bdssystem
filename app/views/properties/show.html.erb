@@ -25,5 +25,10 @@
   <%= @property.bathrooms %>
 </p>
 
+<p>
+  <strong>Photo:</strong>
+  <div class="thumb-image"><%= image_tag(@property.photo , class: "img-thub") %></div>
+</p>
+
 <%= link_to t(".edit"), edit_property_path(@property), class: "btn btn-success" %> |
 <%= link_to t(".back"), properties_path, class: "btn btn-secondary"  %>
