@@ -91,7 +91,10 @@ en:
       bathrooms: "Bathrooms : "
       back: " Back "
       edit: " Edit "
-
+      room: "Rooms"
+      bathroom: "Bathrooms"
+      month_payment: "Est. Monthly Payment of %{variable}"
+      affrord: "Can i affrord this property ?"
   sessions:
     new:
       title: "Please Sign In"

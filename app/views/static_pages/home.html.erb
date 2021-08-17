@@ -2,18 +2,26 @@
 
 <main>
 
-    <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light"><%= t(".title") %></h1>
-        <p class="lead text-muted"><%= t(".description") %></p>
-        <p>
-        <a href="#" class="btn btn-primary my-2"><%= t(".btnone") %></a>
-        <a href="#" class="btn btn-secondary my-2"><%= t(".btntwo") %></a>
-        </p>
+  <section class="py-5 text-center container">
+  <div class="row py-lg-5">
+  <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light"><%= t(".title") %></h1>
+      <p class="lead text-muted"><%= t(".description") %></p>
+      <p>
+      <a href="#" class="btn btn-primary my-2"><%= t(".btnone") %></a>
+      <a href="#" class="btn btn-secondary my-2"><%= t(".btntwo") %></a>
+      </p>
+  </div>
+  </div>
+  </section>
+
+  <section id="lastest-properties" class=" mb-5 ">
+    <div class="container marketing">
+      <div class="row">
+        <%= render "properties/lastest_properties"%>
+      </div>
     </div>
-    </div>
-    </section>
+  </section>
 
   <div class="container marketing">
 

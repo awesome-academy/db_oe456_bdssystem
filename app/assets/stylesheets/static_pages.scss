@@ -60,10 +60,16 @@ aside {
   }
 }
 
-
 .nav-link-btn{
   background-color:#3333;
   color: white;
   padding-top: 15px;
   border: none
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
 }

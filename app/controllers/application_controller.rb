@@ -14,6 +14,10 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def show_sidebar
+    @show_sidebar = true
+  end
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
