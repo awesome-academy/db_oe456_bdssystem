@@ -94,6 +94,10 @@ vi:
       bathrooms: "Phòng tắm : "
       back: " Trở về "
       edit: " Chỉnh sửa "
+      room: "Phòng"
+      bathroom: "Phòng tắm"
+      month_payment: "Phí trả hằng tháng là %{variable}"
+      affrord: "Tôi có thể mua Bất Động Sản này không ?"
 
   sessions:
     new:

@@ -10,6 +10,7 @@ account:
   image_max_size: 5
 
 property:
+  per_page: 3
   max_length: 140
   image_format: photo/jpeg,photo/gif,photo/png
   image_format_validation: ["image/jpeg image/gif image/png"]

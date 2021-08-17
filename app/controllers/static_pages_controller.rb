@@ -1,5 +1,10 @@
 class StaticPagesController < ApplicationController
-  def home; end
+  before_action :logged_in_user, only: [:home]
+  def home
+    @properties = Property.newest
+                          .page(params[:page])
+                          .per(Settings.property.per_page)
+  end
 
   def lastest; end
 

@@ -1,6 +1,7 @@
 class PropertiesController < ApplicationController
-  before_action :logged_in_user, only: [:new, :create,:edit, :update, :destroy]
+  before_action :logged_in_user, only: [:new, :create, :edit, :update, :destroy]
   before_action :correct_user, only: [:show, :edit, :update, :destroy]
+  before_action :show_sidebar, except: [:show]
 
   def index
     @properties = Property.newest
