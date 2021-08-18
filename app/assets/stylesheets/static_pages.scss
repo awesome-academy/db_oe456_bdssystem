@@ -37,8 +37,10 @@ aside {
 }
 
 .gravatar {
-  float: left;
-  margin-right: 10px;
+  float: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  width: 150px;
 }
 
 .gravatar_edit {
@@ -72,4 +74,8 @@ aside {
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
+}
+
+.marketing{
+  margin-top: 5rem;
 }

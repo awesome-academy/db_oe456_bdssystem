@@ -30,6 +30,10 @@ class Account < ApplicationRecord
     BCrypt::Password.create string, cost: cost
   end
 
+  def full_name
+    "#{fitst_name} #{last_name}"
+  end
+
   private
 
   def downcase_email

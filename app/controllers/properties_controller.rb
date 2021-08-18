@@ -9,7 +9,12 @@ class PropertiesController < ApplicationController
                           .per(Settings.account.per_page)
   end
 
-  def show; end
+  def show
+    @agent = @property.account
+    @agent_properties = Property.agent_property(@property.id, @agent.id)
+                                .newest.page(params[:page])
+                                .per(Settings.property.per_page)
+  end
 
   def new
     @property = Property.new
@@ -50,8 +55,8 @@ class PropertiesController < ApplicationController
 
   private
   def property_params
-    params.require(:property).permit(:name, :address, :price, :rooms,
-                                     :bathrooms, :photo)
+    params.require(:property).permit(:name, :address, :price, :rooms, :details,
+                                     :parking_spaces, :bathrooms, :photo)
   end
 
   def correct_user

@@ -43,6 +43,7 @@ vi:
       sidebar:
         dashboard: "Quản trị"
         property: "Nhà đất"
+        setting: "Cài đặt tài khoản"
 
   properties:
     create:
@@ -56,6 +57,9 @@ vi:
       property_destroy_success: "Xóa nhà đất thành công !"
       property_destroy_fail: "Xóa nhà đất thất bại !"
       invalid_account: "Tài khoản không hợp lệ !"
+    agent_details:
+      profile: "Hồ sơ"
+      email: "Email"
     form:
       name: "Tên"
       address: "Địa chỉ"
@@ -92,12 +96,15 @@ vi:
       price: "Địa chỉ : "
       rooms : "Phòng : "
       bathrooms: "Phòng tắm : "
+      parking: "Chỗ để xe"
       back: " Trở về "
       edit: " Chỉnh sửa "
       room: "Phòng"
       bathroom: "Phòng tắm"
       month_payment: "Phí trả hằng tháng là %{variable}"
       affrord: "Tôi có thể mua Bất Động Sản này không ?"
+      property_desc: "Mô tả BDS"
+      property_other: "Tài sản khác của Đại lý này"
 
   sessions:
     new:
@@ -148,6 +155,7 @@ vi:
       description: "Vài điều ngắn gọn và dẫn đầu về bộ sưu tập bên dưới — nội dung của bộ sưu tập, "
       btnone: "Xem thêm"
       btntwo: "Xem thêm"
+      lastest: "Sản phẩm mới nhất"
       row_title: "Tiêu đề "
       row_description: "Vài điều ngắn gọn và dẫn đầu về bộ sưu tập bên dưới — nội dung của bộ sưu tập."
       btn_detail: "Xem chi tiết »"

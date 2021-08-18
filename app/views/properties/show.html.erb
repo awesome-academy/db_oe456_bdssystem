@@ -12,14 +12,16 @@
         <div class="col-md-6 mt-3 text-center">
           <div class="row mr-md-3 bg-light p-3">
             <div class="col-4">
-              <p class="m-0"><strong><%= t(".room") %></strong></p>
               <i class="fas fa-bed text-muted m-0"></i><br />
-              <span class="lead"><%= @property.rooms %></span>
+              <small><%= @property.rooms %><%= t(".room") %></small>
             </div>
             <div class="col-4">
-              <p class="m-0"><strong><%= t(".bathroom") %></strong></p>
-              <i class="fas fa-bath text-muted m-0"></i><br />
-              <span class="lead"><%= @property.bathrooms %></span>
+              <i class="fas fa-bath text-muted ml-1"></i><br />
+              <small><%= @property.bathrooms %><%= t(".bathroom") %></small>
+            </div>
+            <div class="col-4">
+              <i class="fas fa-car"></i><br />
+              <small><%= @property.parking_spaces %><%= t(".parking") %></small>
             </div>
           </div>
         </div>
@@ -34,15 +36,26 @@
       </div>
       <div class="row">
         <div class="col pt-4">
-          <p class="h2">Property Description</p>
+          <p class="h2"><%= t(".property_desc") %></p>
           <p><%= @property.name %></p>
-
-
-          <%= link_to t(".back"), request.referer, class: "btn btn-secondary" %>
+          <%= simple_format @property.details%>
+          <%= link_to t(".back"), request.referer, class: "btn btn-secondary btn-back" %>
         </div>
       </div>
     </div>
-
+    <div class="col -4">
+      <%= render "properties/agent_details"%>
+      <iframe class="ml-lg-6 mt-3 " width="374" height="240" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1as2uf4ut2rf6f4-Xz57i2J80fJsOTrs&q=<%= @property.address.to_param %>" allowfullscreen></iframe>
+    </div>
   </div>
-
+  <section class="mt-5 mb-5">
+    <div class="container" bis_skin_checked="1">
+      <div class="row" bis_skin_checked="1">
+        <div class="col-12">
+          <p class="h3 mb-3"><%= t(".property_other") %></p>
+        </div>
+        <%= render "properties/lastest_properties", properties: @agent_properties %>
+      </div>
+    </div>
+  </section>
 </div>
