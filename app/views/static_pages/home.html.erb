@@ -18,7 +18,8 @@
   <section id="lastest-properties" class=" mb-5 ">
     <div class="container marketing">
       <div class="row">
-        <%= render "properties/lastest_properties"%>
+        <h1><%= t(".lastest") %></h1>
+        <%= render "properties/lastest_properties", properties: @properties%>
       </div>
     </div>
   </section>

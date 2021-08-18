@@ -1,6 +1,9 @@
 class Property < ApplicationRecord
   belongs_to :account
+
   scope :newest, ->{order(created_at: :desc)}
+  scope :agent_property, ->(property_id, agent_id){where(account_id: agent_id).where.not(id: property_id)}
+
   has_one_attached :photo
   validates :name,
             presence: true,

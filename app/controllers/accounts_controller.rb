@@ -1,5 +1,6 @@
 class AccountsController < ApplicationController
   before_action :load_account, only: [:show, :edit]
+  before_action :show_sidebar, only: [:show]
 
   def show; end
 
@@ -38,6 +39,8 @@ class AccountsController < ApplicationController
           .permit(:last_name,
                   :fitst_name,
                   :email,
+                  :phone,
+                  :company,
                   :password,
                   :password_confirmation)
   end

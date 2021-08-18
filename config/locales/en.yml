@@ -43,6 +43,7 @@ en:
       sidebar:
         dashboard: "Dashboard"
         property: "Property"
+        setting: "Account Setting"
 
   properties:
     create:
@@ -56,6 +57,9 @@ en:
       property_destroy_success: "Destroy property success !"
       property_destroy_fail: "Destroy property fail !"
       invalid_account: "Invalid Account !"
+    agent_details:
+      profile: "Profile"
+      email: "Email"
     form:
       name: "Name"
       address: "Address"
@@ -63,6 +67,8 @@ en:
       rooms : "Rooms"
       bathrooms: "Bathrooms"
       save: "Save Property"
+    lastest_properties:
+      title: "Lastest Property"
     property:
       show: " Show "
       edit: " Edit "
@@ -89,12 +95,15 @@ en:
       price: "Price : "
       rooms : "Rooms : "
       bathrooms: "Bathrooms : "
+      parking: "Parking Space"
       back: " Back "
       edit: " Edit "
       room: "Rooms"
       bathroom: "Bathrooms"
       month_payment: "Est. Monthly Payment of %{variable}"
       affrord: "Can i affrord this property ?"
+      property_desc: "Property Description"
+      property_other: "Other Property by this Agent"
   sessions:
     new:
       title: "Please Sign In"
@@ -145,6 +154,7 @@ en:
       btnone: "Learn more"
       btntwo: "Learn more"
       row_title: "Heading"
+      lastest: "Lastest Properties"
       row_description: "And lastly this, the third column of representative placeholder content."
       btn_detail: "View details »"
     advertising:
